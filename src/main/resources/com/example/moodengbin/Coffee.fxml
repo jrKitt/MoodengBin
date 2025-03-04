@@ -152,66 +152,18 @@
                         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                      </GridPane.margin>
                   </Button>
-                  <ImageView fitHeight="94.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.rowIndex="11">
-                     <image>
-                        <Image url="@Picture/3_20250225163222-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="1" GridPane.rowIndex="12">
-                     <image>
-                        <Image url="@Picture/3_20250225175644-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.rowIndex="12">
-                     <image>
-                        <Image url="@Picture/3_20250225175951-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="11">
-                     <image>
-                        <Image url="@Picture/3_20250225175434-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="1" GridPane.rowIndex="11">
-                     <image>
-                        <Image url="@Picture/3_20250225175248-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="13">
-                     <image>
-                        <Image url="@Picture/3_20250225180027-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="1" GridPane.rowIndex="13">
-                     <image>
-                        <Image url="@Picture/3_20250225180016-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.rowIndex="13">
-                     <image>
-                        <Image url="@Picture/3_20250225175951-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="12">
-                     <image>
-                        <Image url="@Picture/3_20250225175816-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="2" GridPane.rowIndex="14">
-                     <image>
-                        <Image url="@Picture/3_20250225180259-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.columnIndex="1" GridPane.rowIndex="14">
-                     <image>
-                        <Image url="@Picture/3_20250225180205-removebg-preview.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="94.0" fitWidth="68.0" pickOnBounds="true" preserveRatio="true" translateX="25.0" translateY="-10.0" GridPane.rowIndex="14">
-                     <image>
-                        <Image url="@Picture/3_20250225180106-removebg-preview.png" />
-                     </image>
-                  </ImageView>
+                  <ImageView fx:id="EspressoImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="BlackCoffeeImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="CoolEspressoImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="CappuccinoImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="LatteImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="MochaImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="CaramelLatteImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="MatchaCoffeeLatteImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="ThaiCoffeeImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="LycheeKanoImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="YuzuKanoImg" fitHeight="94.0" fitWidth="79.0" />
+                  <ImageView fx:id="MintCoffeeLatteImg" fitHeight="94.0" fitWidth="79.0" />
                </children>
                <opaqueInsets>
                   <Insets bottom="5.0" left="10.0" right="5.0" top="10.0" />

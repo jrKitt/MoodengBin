@@ -27,17 +27,26 @@
       <Label layoutX="55.0" layoutY="483.0" prefHeight="27.0" prefWidth="47.0" text="เป๊ปซี่ และ" />
       <Label layoutX="266.0" layoutY="496.0" text="ทางเลือกสุขภาพ" />
       <Label layoutX="55.0" layoutY="496.0" prefHeight="27.0" prefWidth="47.0" text="เซเว่นอัพ" />
-      <Button fx:id="CoffeeButton" alignment="BOTTOM_CENTER" layoutX="201.0" layoutY="300.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 10 0;" text="กาแฟสด" />
-      <Button fx:id="RecommendButton" alignment="BOTTOM_CENTER" layoutX="83.0" layoutY="300.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 10 0;" text="เมนูแนะนำ" />
-      <Button fx:id="MilkButton" alignment="BOTTOM_CENTER" layoutX="143.0" layoutY="432.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 5 0;" text="นม,โกโก้&#10;คาราเมล">
-         <font>
-            <Font size="11.0" />
-         </font></Button>
-      <Button fx:id="PepsiButton" alignment="BOTTOM_CENTER" layoutX="28.0" layoutY="428.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 5 0;" text="เป๊ปซี่&#10;เซเว่นอัพ" textAlignment="CENTER">
-         <font>
-            <Font size="11.0" />
-         </font></Button>
-      <Button fx:id="HealthButton" alignment="BOTTOM_CENTER" layoutX="252.0" layoutY="428.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 15 0;" text="ทางเลือกสุขภาพ" />
+      <Button fx:id="CoffeeButton" alignment="BOTTOM_CENTER" layoutX="201.0" layoutY="300.0" mnemonicParsing="false"
+              prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff;"
+              text="กาแฟสด" onAction="#switchToCoffee"/>
+
+      <Button fx:id="RecommendButton" alignment="BOTTOM_CENTER" layoutX="83.0" layoutY="300.0" mnemonicParsing="false"
+              prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff;"
+              text="เมนูแนะนำ" onAction="#switchToRecommend"/>
+
+      <Button fx:id="MilkButton" alignment="BOTTOM_CENTER" layoutX="143.0" layoutY="432.0" mnemonicParsing="false"
+              prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff;"
+              text="นม,โกโก้&#10;คาราเมล" onAction="#switchToMilk"/>
+
+      <Button fx:id="PepsiButton" alignment="BOTTOM_CENTER" layoutX="28.0" layoutY="428.0" mnemonicParsing="false"
+              prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff;"
+              text="เป๊ปซี่&#10;เซเว่นอัพ" textAlignment="CENTER" onAction="#switchToPepsi"/>
+
+      <Button fx:id="HealthButton" alignment="BOTTOM_CENTER" layoutX="252.0" layoutY="428.0" mnemonicParsing="false"
+              prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff;"
+              text="ทางเลือกสุขภาพ" onAction="#switchToHealth" />
+
       <ImageView fitHeight="110.0" fitWidth="75.0" layoutX="93.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Picture/4_20250225182627-removebg-preview.png" />

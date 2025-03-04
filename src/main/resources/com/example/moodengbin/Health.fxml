@@ -14,7 +14,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="390.0" style="-fx-background-color: #E1F1F0;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.HealthController">
    <children>
-      <Button fx:id="BackButton" layoutX="-24.0" layoutY="32.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="91.0" style="-fx-background-color: #E1F1F0; -fx-font-weight: bold;" text="&lt;" textFill="#f893b5">
+      <Button fx:id="BackButton" layoutX="-24.0" layoutY="32.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="91.0" style="-fx-background-color: #E1F1F0; -fx-font-weight: bold;" text="&lt;" textFill="#f893b5" onAction="">
          <font>
             <Font size="42.0" />
          </font>
