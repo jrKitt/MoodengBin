@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: EAEAEA;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.HomepageController">
+   <children>
+      <ImageView fitHeight="144.0" fitWidth="198.0" layoutX="95.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/Moodeng-removebg-preview.png" />
+         </image></ImageView>
+      <Label layoutX="154.0" layoutY="149.0" text="ยินดีต้อนรับ" textFill="#ad5932">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="208.0" text="กรุณาเลือกประเภทเครื่องดื่ม">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="111.0" layoutY="368.0" text="เมนูแนะนำ" />
+      <Label layoutX="55.0" layoutY="483.0" prefHeight="27.0" prefWidth="47.0" text="เป๊ปซี่ และ" />
+      <Label layoutX="266.0" layoutY="496.0" text="ทางเลือกสุขภาพ" />
+      <Label layoutX="55.0" layoutY="496.0" prefHeight="27.0" prefWidth="47.0" text="เซเว่นอัพ" />
+      <Button fx:id="CoffeeButton" alignment="BOTTOM_CENTER" layoutX="201.0" layoutY="300.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 10 0;" text="กาแฟสด" />
+      <Button fx:id="RecommendButton" alignment="BOTTOM_CENTER" layoutX="83.0" layoutY="300.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 10 0;" text="เมนูแนะนำ" />
+      <Button fx:id="MilkButton" alignment="BOTTOM_CENTER" layoutX="143.0" layoutY="432.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 5 0;" text="นม,โกโก้&#10;คาราเมล">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button fx:id="PepsiButton" alignment="BOTTOM_CENTER" layoutX="28.0" layoutY="428.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 5 0;" text="เป๊ปซี่&#10;เซเว่นอัพ" textAlignment="CENTER">
+         <font>
+            <Font size="11.0" />
+         </font></Button>
+      <Button fx:id="HealthButton" alignment="BOTTOM_CENTER" layoutX="252.0" layoutY="428.0" mnemonicParsing="false" prefHeight="102.0" prefWidth="102.0" style="-fx-background-radius: 100; -fx-background-color: ffffff; -fx-padding: 0 0 15 0;" text="ทางเลือกสุขภาพ" />
+      <ImageView fitHeight="110.0" fitWidth="75.0" layoutX="93.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/4_20250225182627-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="102.0" fitWidth="75.0" layoutX="216.0" layoutY="300.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/3_20250225163222-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="70.0" fitWidth="72.0" layoutX="275.0" layoutY="432.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/1_20250225184706-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="72.0" layoutX="162.0" layoutY="421.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/5_20250225172613-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="92.0" fitWidth="72.0" layoutX="46.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Picture/IMG_0460-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
