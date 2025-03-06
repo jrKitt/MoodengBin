@@ -1,35 +1,39 @@
 package com.example.moodengbin;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+
+import com.example.moodengbin.FirebaseConnection;
+import com.google.cloud.firestore.Firestore;
+import com.google.cloud.firestore.QueryDocumentSnapshot;
+import com.google.cloud.firestore.QuerySnapshot;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.ExecutionException;
 
 public class getMenu {
     public static List<Menu> getMenuByCategory(String category) {
         List<Menu> menuList = new ArrayList<>();
-        String sql = "SELECT * FROM menu_items WHERE category = ?";
+        Firestore db = FirebaseConnection.connect();
 
-        try (Connection conn = ConnectionDB.connect();
-             PreparedStatement stmt = conn.prepareStatement(sql)) {
+        try {
+            QuerySnapshot querySnapshot = db.collection("menu_items")
+                    .whereEqualTo("category", category)
+                    .get()
+                    .get();
 
-            stmt.setString(1, category);
-            ResultSet rs = stmt.executeQuery();
-
-            while (rs.next()) {
+            for (QueryDocumentSnapshot document : querySnapshot.getDocuments()) {
                 Menu menu = new Menu(
-                        rs.getInt("id"),
-                        rs.getString("name"),
-                        rs.getString("description"),
-                        rs.getDouble("price"),
-                        rs.getString("image_path")
+                        document.getLong("id").intValue(),
+                        document.getString("name"),
+                        document.getString("description"),
+                        document.getDouble("price"),
+                        document.getString("image_path")
                 );
                 menuList.add(menu);
             }
-        } catch (SQLException e) {
-            System.err.println(e.getMessage());
+        } catch (InterruptedException | ExecutionException e) {
+            System.err.println("Error getting menu: " + e.getMessage());
         }
+
         return menuList;
     }
 }

@@ -18,12 +18,14 @@ public class HomepageController {
 
     @FXML
     public void switchToCoffee(ActionEvent event) throws IOException {
-        root = FXMLLoader.load(getClass().getResource("Coffee.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getClassLoader().getResource("Coffee.fxml"));
+        Parent root = loader.load();
         stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
     }
+
 
     @FXML
     public void switchToRecommend(ActionEvent event) throws IOException {
