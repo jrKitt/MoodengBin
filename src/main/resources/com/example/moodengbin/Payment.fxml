@@ -8,29 +8,29 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #F6E2E3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.PaymentController">
+<AnchorPane stylesheets="@styles.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #F6E2E3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.PaymentController">
    <children>
       <Label layoutX="117.0" layoutY="38.0" text="เลือกวิธีจ่ายเงิน">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="fonts/Prompt-Regular.ttf" size="24.0" />
          </font>
       </Label>
       <ImageView fitHeight="210.0" fitWidth="301.0" layoutX="38.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Picture/Moodeng-removebg-preview.png" />
          </image></ImageView>
-      <Button fx:id="CancelButton" layoutX="130.0" layoutY="482.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #767676; -fx-background-radius: 20;" text="ยกเลิกการซื้อ" textFill="WHITE">
+      <Button fx:id="CancelButton" layoutX="130.0" layoutY="482.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #767676; -fx-background-radius: 20;" text="ยกเลิกการซื้อ" textFill="WHITE" onAction="#cancelPayment">
          <font>
             <Font size="18.0" />
          </font>
       </Button>
       <HBox layoutX="62.0" layoutY="412.0" prefHeight="46.0" prefWidth="301.0" />
-      <Button fx:id="CashButton" alignment="BOTTOM_CENTER" layoutX="41.0" layoutY="283.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="143.0" style="-fx-background-color: #271111; -fx-background-radius: 20;" text="เงินสด" textFill="#fffbfb">
+      <Button fx:id="CashButton" alignment="BOTTOM_CENTER" layoutX="41.0" layoutY="283.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="143.0" style="-fx-background-color: #271111; -fx-background-radius: 20;" text="หมูพอยต์" textFill="#fffbfb" onAction="#handleCashPayment">
          <font>
             <Font size="24.0" />
          </font>
       </Button>
-      <Button fx:id="PromptPayButton" alignment="BOTTOM_CENTER" layoutX="205.0" layoutY="283.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="143.0" style="-fx-background-color: #271111; -fx-background-radius: 20;" text="พร้อมเพย์" textFill="#fffbfb">
+      <Button fx:id="PromptPayButton" alignment="BOTTOM_CENTER" layoutX="205.0" layoutY="283.0" mnemonicParsing="false" prefHeight="136.0" prefWidth="143.0" style="-fx-background-color: #271111; -fx-background-radius: 20;" text="พร้อมเพย์" textFill="#fffbfb" onAction="#handlePromptPayPayment">
          <font>
             <Font size="24.0" />
          </font>

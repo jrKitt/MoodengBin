@@ -8,19 +8,19 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #F6E2E3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.FinalPageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="390.0" style="-fx-background-color: #F6E2E3;" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.moodengbin.FinalPageController">
    <children>
       <ImageView fitHeight="136.0" fitWidth="189.0" layoutX="100.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
       <Label layoutX="117.0" layoutY="38.0" text="เสร็จเรียบร้อย">
          <font>
-            <Font name="System Bold" size="24.0" />
+            <Font name="fonts/Prompt-Regular.ttf" size="24.0" />
          </font>
       </Label>
       <ImageView fitHeight="190.0" fitWidth="277.0" layoutX="53.0" layoutY="95.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@Picture/Moodeng-removebg-preview.png" />
          </image></ImageView>
-      <Button fx:id="ReturnButton" layoutX="130.0" layoutY="482.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #767676; -fx-background-radius: 20;" text="กลับหน้าแรก" textFill="WHITE">
+      <Button fx:id="ReturnButton" layoutX="130.0" layoutY="482.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="129.0" style="-fx-background-color: #767676; -fx-background-radius: 20;" text="กลับหน้าแรก" textFill="WHITE" onAction="#switchToHome">
          <font>
             <Font size="18.0" />
          </font>
@@ -28,8 +28,13 @@
       <HBox layoutX="62.0" layoutY="412.0" prefHeight="46.0" prefWidth="301.0" />
       <Label layoutX="109.0" layoutY="300.0" text="รอรับเครื่องดื่มได้เลย" textFill="#ad5932">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="fonts/Prompt-Regular.ttf" size="18.0" />
          </font>
       </Label>
+      <Button fx:id="History" layoutX="114.0" layoutY="533.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="162.0" style="-fx-background-color: #3F1C1C; -fx-background-radius: 20;" text="ประวัติการสั่งซื้อ" textFill="WHITE" onAction="#showOrderHistoryPopup">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
